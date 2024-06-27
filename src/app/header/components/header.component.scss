@@ -1,0 +1,32 @@
+.app-header {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    overflow-x: hidden;
+}
+
+#principal {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 100%;
+    border-bottom: 1.8px solid black;
+    padding: 30px;
+    margin-top: 20px;
+}
+
+#principal h1{
+    font-size: 50px;
+}
+
+#principal span{
+    font-size: 20px;
+}
+
+.left {
+    margin-right: 20%;
+}
+
+.right {
+    margin-left: 20%;
+}
