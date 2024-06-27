@@ -1,3 +1,18 @@
 <app-header></app-header>
-<p>news works!</p>
+<main>
+    <section class="main-section">
+        <div class="new-info">
+            <div class="title">
+                <h1>{{newURL.title}}</h1>
+            </div>
+            <div class="author">
+                <mat-icon aria-hidden="false" aria-label="Example home icon" fontIcon="people"></mat-icon>
+                <span><b>Jornalista: </b>{{newURL.author}}</span>
+            </div>
+            <div class="image">
+                <img [src]="newURL.image" width="100%">
+            </div>
+        </div>
+    </section>
+</main>
 <app-footer></app-footer>

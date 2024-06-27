@@ -1,0 +1,32 @@
+.main-section {
+    margin-top: 3em;
+    width: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.new-info {
+    width: 1000px;
+}
+
+.title {
+    width: 100%;
+    font-size: 30px;
+    margin-top: 15px;
+    margin-bottom: 15px;    
+}
+
+.title h1 {
+    font-weight: 300;
+}
+
+.author {
+    display: flex;
+    align-items: center;
+}
+
+.author span{
+    margin-left: 5px;
+    font-size: 18px;
+}

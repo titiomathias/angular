@@ -9,7 +9,7 @@
                         <img [src]="item.image" alt="{{item.title}}" width="150px">
                     </a>
                     <div class="news-details">
-                        <h4><a [href]='item.id' target="_blank">{{item.title}}</a></h4>
+                        <h4><a [routerLink]="['/news', item.id]" target="_blank">{{item.title}}</a></h4>
                         <span>Jornalista: {{item.author}}</span>
                     </div>
                 </div>
