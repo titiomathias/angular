@@ -2,6 +2,10 @@
 
 This project was generated with [Angular CLI](https://github.com/angular/angular-cli) version 17.2.0.
 
+# What is ProtocoloGreenhand
+
+Based in cyberpunk universe, this project it's a news website about what's happening in Night City with secret resources for the Resistence. The Resistence it's a activists group in Night City that help people in crisis situations, and with this site they share news and missions to another agents interested.
+
 ## Development server
 
 Run `ng serve` for a dev server. Navigate to `http://localhost:4200/`. The application will automatically reload if you change any of the source files.
