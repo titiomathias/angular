@@ -17,7 +17,7 @@ export const mockNews = [
   },
   {
     "id": 2,
-    "image": "https://image.api.playstation.com/vulcan/ap/rnd/202202/1514/1IsdhYkL04bOKIx7YrntiJM0.jpg",
+    "image": "https://valegeek.com.br/wp-content/uploads/2024/03/1.-Cyberpunk2077_Ultimate_Edition_PC_Time_To_Get_To_Work-3a95349c1a1cb3637e93.jpg",
     "title": "Gangue das Mox domina território no Brasil",
     "author": "Cross",
     "time": "26/05/2077 - 8:10",

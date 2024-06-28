@@ -4,16 +4,16 @@
     <section class="main-section">
         <div class="d-flex justify-content-center align-items-center">
             <div class="card p-3">
-                <form>
+                <form [formGroup]="loginForm" (ngSubmit)="onSubmit()">
                     <div class="form-group form-title">
                         <h2>Acesso Restrito</h2>
                     </div>
                     <div class="form-group">
-                        <input type="text" id="email" class="form-control" placeholder="username">
+                        <input type="text" id="email" class="form-control" placeholder="username" formControlName="name">
                     </div>
 
                     <div class="form-group">
-                        <input type="password" id="senha" class="form-control" placeholder="password">
+                        <input type="password" id="senha" class="form-control" placeholder="password" formControlName="password">
                     </div>
 
                     <div class="form-group">
