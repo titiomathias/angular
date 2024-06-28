@@ -5,7 +5,7 @@
             <h3>Notícias Relevantes</h3>
             <div id="best-news">
                 <div *ngFor="let item of news" class="news-item">
-                    <a [href]="item.link" target="_blank">
+                    <a [routerLink]="['/news', item.id]" target="_blank">
                         <img [src]="item.image" alt="{{item.title}}" width="150px">
                     </a>
                     <div class="news-details">

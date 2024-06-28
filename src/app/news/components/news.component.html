@@ -7,10 +7,13 @@
             </div>
             <div class="author">
                 <mat-icon aria-hidden="false" aria-label="Example home icon" fontIcon="people"></mat-icon>
-                <span><b>Jornalista: </b>{{newURL.author}}</span>
+                <span><b>Jornalista: </b>{{newURL.author}} - {{newURL.time}}</span>
             </div>
             <div class="image">
                 <img [src]="newURL.image" width="100%">
+            </div>
+            <div class="content">
+                {{newURL.content}}
             </div>
         </div>
     </section>

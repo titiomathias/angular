@@ -2,11 +2,13 @@
     display: flex;
     justify-content: center;
     align-items: center;
+    bottom: 0;
+    position: fixed;
+    width: 100%;
 }
 
 .line-footer {
     display: flex;
-    position: absolute;
     width: 100%;
     bottom: 0;
     justify-content: center;

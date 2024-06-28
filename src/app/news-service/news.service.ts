@@ -6,8 +6,9 @@ export interface News {
   id: number;
   image: string;
   title: string;
-  link: string;
   author: string;
+  time: string;
+  content: string;
 }
 
 @Injectable({
