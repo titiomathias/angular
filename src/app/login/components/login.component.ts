@@ -2,7 +2,8 @@ import { Component } from '@angular/core';
 import { HeaderComponent } from '../../header/components/header.component';
 import { FooterComponent } from '../../footer/components/footer.component';
 import { FormControl, FormGroup, ReactiveFormsModule } from '@angular/forms';
-import { Route, RouterModule } from '@angular/router';
+import { Router } from '@angular/router';
+import { AuthService } from '../../auth.service';
 
 @Component({
   selector: 'app-login',
@@ -19,9 +20,13 @@ export class LoginComponent {
     password: new FormControl('')
   })
 
-  onSubmit(){
-    if(this.loginForm.value.name == "admin" && this.loginForm.value.password == "2077"){
-      console.log("Logado")
+  constructor(private authService: AuthService){}
+
+  onSubmit() {
+    const name = this.loginForm.value.name;
+    const password = this.loginForm.value.password;
+    if (!this.authService.login(name, password)) {
+      console.log("erro")
     }
   }
 }
