@@ -2,7 +2,7 @@ import { Component } from '@angular/core';
 import { HeaderComponent } from '../../header/components/header.component';
 import { FooterComponent } from '../../footer/components/footer.component';
 import { FormControl, FormGroup, ReactiveFormsModule } from '@angular/forms';
-import { Router } from '@angular/router';
+import { Route, Router } from '@angular/router';
 import { AuthService } from '../../auth.service';
 
 @Component({
@@ -20,7 +20,13 @@ export class LoginComponent {
     password: new FormControl('')
   })
 
-  constructor(private authService: AuthService){}
+  constructor(private authService: AuthService, private router: Router){}
+
+  ngOnInit(): void {
+    if(this.authService.isLoggedIn()){
+      this.router.navigate(['/painel']);
+    } 
+  }
 
   onSubmit() {
     const name = this.loginForm.value.name;

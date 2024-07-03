@@ -12,7 +12,7 @@ export class AuthService {
   login(name: any, password: any): boolean {
     if (name == 'admin' && password == '2077') {
       this.isAuthenticated = true;
-      localStorage.setItem('isLoggedIn', 'true');  // Armazena a sessão no localStorage
+      localStorage.setItem('isLoggedIn', 'true'); 
       this.router.navigate(['/painel']);
       return true;
     }
