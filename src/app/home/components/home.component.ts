@@ -4,6 +4,7 @@ import { FooterComponent } from '../../footer/components/footer.component';
 import { NewsService, News } from '../../news-service/news.service'; // Importando a interface News do NewsService
 import { CommonModule } from '@angular/common';
 import { RouterModule } from '@angular/router';
+import { DataService } from '../../data.service';
 
 @Component({
   selector: 'app-home',
